@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "meteor-crash-addon",
+  "version": "${version}",
+  "name": "Server Crasher",
+  "description": "Modified for Air",
+  "authors": [
+    "COHEJH"
+  ],
+  "contact": {
+    "website": "air-client.github.io"
+  },
+  "icon": "assets/meteorcrashaddon/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "meteor": [
+      "widecat.meteorcrashaddon.CrashAddon"
+    ]
+  },
+  "mixins": [
+    "meteorcrashaddon.mixins.json"
+  ],
+  "custom": {
+    "meteor-client:color": "229,255,0",
+    "github:sha": "@gh_hash@"
+  },
+  "depends": {
+    "java": ">=16",
+    "minecraft": ">=@mc_version@",
+    "meteor-client": "*"
+  }
+}
